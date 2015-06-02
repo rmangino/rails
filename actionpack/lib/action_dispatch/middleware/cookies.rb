@@ -113,7 +113,7 @@ module ActionDispatch
         @permanent ||= PermanentCookieJar.new(self, @key_generator, @options)
       end
 
-      # Returns a jar that'll automatically generate a signed representation of cookie value and verify it when reading from
+      # Returns a jar that'll automatically generates a signed representation of a cookie value and verifies it when reading from
       # the cookie again. This is useful for creating cookies with values that the user is not supposed to change. If a signed
       # cookie was tampered with by the user (or a 3rd party), nil will be returned.
       #
@@ -137,7 +137,7 @@ module ActionDispatch
           end
       end
 
-      # Returns a jar that'll automatically encrypt cookie values before sending them to the client and will decrypt them for read.
+      # Returns a jar that'll automatically encrypts cookie values before sending them to the client and will decrypt them for reading.
       # If the cookie was tampered with by the user (or a 3rd party), nil will be returned.
       #
       # If +config.secret_key_base+ and +config.secret_token+ (deprecated) are both set,
